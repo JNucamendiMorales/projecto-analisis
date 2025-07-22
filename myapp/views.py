@@ -6,7 +6,7 @@ from .forms import CreateNewTask, CreateNewProject
 # Create your views here.
 
 def index(request):
-    title="Django course"
+    title="Reservaciones chuilaquiles Airbnb"
     return render(request, "index.html",{
         "mostrarTitulo": title
     })

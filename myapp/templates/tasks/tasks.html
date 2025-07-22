@@ -4,27 +4,9 @@
 
 {% block content %}
 
-<h1>Tasks</h1>
+<h1>Salones para fiestas</h1>
 
-{% for task in showAllTasks %}
 
-<div>
-
-    <h1> {% if task.done == False %}🕑{% else %}✅{% endif %} {{task.title}} </h1>
-
-    <p>{{task.description}}</p>
-
-    {% if task.done == False %}
-    <p> undoned task </p>
-    {% else %}
-    <p>task done</p>
-    {% endif %}
-
-    <button>Delete</button>
-    <button>Done</button>
-</div>
-
-{% endfor %}
 
 {% endblock %}
 
